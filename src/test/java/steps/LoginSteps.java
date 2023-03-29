@@ -30,6 +30,22 @@ public class LoginSteps {
 	public void user_should_get_redirect_to_the_home_page() {
 		System.out.println("Then statement");
 	}
+	
+	@When("User enters the incorrect username")
+	public void user_enters_the_incorrect_username() {
+	    System.out.println("when for incorrect username");
+	}
+
+	@When("User enters the incorrect password")
+	public void user_enters_the_incorrect_password() {
+		System.out.println("when for incorrect password");
+	}
+
+	@Then("User should get error message")
+	public void user_should_get_error_message() {
+		System.out.println("Then for error message");
+	}
+
 
 
 }
