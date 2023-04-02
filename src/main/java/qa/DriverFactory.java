@@ -5,10 +5,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverFactory {
 	
+	static WebDriver driver;
 	
-	public void initBrowser()
+	public WebDriver initBrowser()
 	{
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
+		
+		return driver;
+		
 	}
 
+	
+	public static WebDriver getDriver()
+	{
+		return driver;
+	}
 }

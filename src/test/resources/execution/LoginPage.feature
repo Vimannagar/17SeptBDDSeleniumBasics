@@ -2,7 +2,7 @@ Feature: Login
 Scenario: login page title
 Given user is at landing page
 When user gets the title of page
-Then page title should contains	"Shopping"
+Then page title should have word "Shopping"
 
 Scenario: verify cart icon
 Given user is at landing page

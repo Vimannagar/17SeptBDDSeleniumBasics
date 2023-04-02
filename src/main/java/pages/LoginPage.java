@@ -10,16 +10,16 @@ public class LoginPage {
 	WebDriver driver;
 	
 	@FindBy(xpath = "//*[@id='nav-cart']")
-	WebElement carticon;
+	private WebElement carticon;
 		
 	@FindBy(xpath = "//*[@id='nav-link-accountList']")
-	WebElement hoverelement;
+	private WebElement hoverelement;
 	
 	@FindBy(xpath = "//*[@id='nav-flyout-ya-signin']//*[@class='nav-action-button']")
-	WebElement signinbutton;
+	private WebElement signinbutton;
 	
 	@FindBy(xpath = "//*[@id='ap_email']")
-	WebElement emailaddress;
+	private WebElement emailaddress;
 	
 	@FindBy(xpath = "//*[@type='submit']")
 	WebElement continuebutton;
